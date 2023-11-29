@@ -1,10 +1,7 @@
 <html>
   <head> 
     <meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Easily Create Buttons with Icons using HTML & CSS</title>
-	<link rel="stylesheet" href="main.css">
+	
  <style>
    body{background: rgb(188,255,230);}
 body{background: linear-gradient(0deg, rgba(188,255,230,1) 0%, rgba(234,255,247,1) 100%);}
@@ -19,7 +16,7 @@ body{background: linear-gradient(0deg, rgba(188,255,230,1) 0%, rgba(234,255,247,
 	</button>
 	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <h1>All About Animals</h1>
-    <p1>In this website, you will learn many things about cute and ferocious little creatures. If you would like to learn about house pets, scroll down. If there are other animals that you are interested in,
+    <p1> On this website, you will learn many things about cute and ferocious little creatures. If you would like to learn about house pets, scroll down. If there are other animals that you are interested in,
     please choose from the options above.</p1>
     <h2>Dogs</h2>
     <iframe src="https://giphy.com/embed/82nrkDUHJCMiA" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/82nrkDUHJCMiA">via GIPHY</a></p>
@@ -31,41 +28,53 @@ body{background: linear-gradient(0deg, rgba(188,255,230,1) 0%, rgba(234,255,247,
 
   </body>
 </html>
+
 <css>
-  .button {
-	display: flex;
-	height: 50px;
-	padding: 0;
-	background: #009578;
-	border: none;
-	outline: none;
-	border-radius: 5px;
-	overflow: hidden;
-	font-family: "Quicksand", sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	cursor: pointer;
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
 }
 
-.button:hover {
-	background: #008168;
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
-.button:active {
-	background: #006e58;
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
 
-.button__text,
-.button__icon {
-	display: inline-flex;
-	align-items: center;
-	padding: 0 24px;
-	color: #fff;
-	height: 100%;
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }
-
-.button__icon {
-	font-size: 1.5em;
-	background: rgba(0, 0, 0, 0.08);
-}
+	
 </css>
+
